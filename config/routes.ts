@@ -288,6 +288,12 @@
         icon: 'smile',
         component: './tutorial/basic',
       },
+      {
+        name: 'search',
+        path: '/tutorial/search',
+        icon: 'smile',
+        component: './tutorial/search',
+      },
     ],
   },
   {

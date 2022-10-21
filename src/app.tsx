@@ -8,6 +8,7 @@ import Footer from '@/components/Footer';
 import { currentUser as queryCurrentUser } from './services/ant-design-pro/api';
 import { BookOutlined, LinkOutlined } from '@ant-design/icons';
 import defaultSettings from '../config/defaultSettings';
+import { RequestConfig } from 'umi';
 
 const isDev = process.env.NODE_ENV === 'development';
 const loginPath = '/user/login';
@@ -49,6 +50,27 @@ export async function getInitialState(): Promise<{
     settings: defaultSettings,
   };
 }
+
+export const request: RequestConfig = {
+  timeout: 3000,
+  errorConfig: {},
+  middlewares: [],
+  requestInterceptors: [
+    (url: string, options: any) => {
+      const headers = {
+        'ngrok-skip-browser-warning': 1,
+      };
+      return { url, options: { ...options, headers } };
+    },
+    (url: string, options: any) => {
+      if (!isDev && url.startsWith('/api')) {
+        url = 'https://137f-140-205-11-70.jp.ngrok.io' + url;
+      }
+      return { url, options };
+    },
+  ],
+  responseInterceptors: [],
+};
 
 // ProLayout 支持的api https://procomponents.ant.design/components/layout
 export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) => {
