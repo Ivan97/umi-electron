@@ -59,3 +59,6 @@ You can view full document on our [official website](https://pro.ant.design). An
 ## electron
 
 次版本使用于 umi3 [umi-plugin-electron-builder](https://github.com/BySlin/umi-plugin-electron-builder/tree/2.x)
+
+## umi3 & tailwindcss
+[知乎](https://zhuanlan.zhihu.com/p/489410215)

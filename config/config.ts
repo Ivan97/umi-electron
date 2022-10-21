@@ -71,6 +71,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  extraPostCSSPlugins: [require('tailwindcss'), require('autoprefixer')],
   mfsu: {},
   webpack5: {},
   exportStatic: {},
