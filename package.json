@@ -54,6 +54,7 @@
   ],
   "dependencies": {
     "@ahooksjs/use-url-state": "^3.5.0",
+    "@alipay/tech-ui": "^2.29.0",
     "@ant-design/charts": "^0.9.4",
     "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-card": "^1.19.0",

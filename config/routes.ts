@@ -294,6 +294,12 @@
         icon: 'smile',
         component: './tutorial/search',
       },
+      {
+        name: 'query',
+        path: '/tutorial/query',
+        icon: 'AppstoreFilled',
+        component: './tutorial/query',
+      },
     ],
   },
   {
