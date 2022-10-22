@@ -9,7 +9,12 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  daisyui: {
+    styled: true,
+    themes: false,
+    rtl: false,
+  },
+  plugins: [require('daisyui')],
   corePlugins: {
     preflight: false,
   },

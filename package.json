@@ -74,6 +74,7 @@
     "bizcharts": "^3.5.3-beta.0",
     "bizcharts-plugin-slider": "^2.1.1-beta.1",
     "classnames": "^2.3.0",
+    "daisyui": "^1.25.4",
     "gg-editor": "^2.0.2",
     "lodash": "^4.17.21",
     "lodash-decorators": "^6.0.0",
