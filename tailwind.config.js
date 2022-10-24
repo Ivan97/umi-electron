@@ -4,7 +4,12 @@ module.exports = {
   purge: ['./src/**/*.{ts,tsx,js,jsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'spin-ease-in-out': 'spin 2s ease-in-out infinite',
+      },
+    },
   },
   variants: {
     extend: {},

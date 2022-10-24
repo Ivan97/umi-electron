@@ -24,13 +24,20 @@ export default () => {
 
   return (
     <PageContainer>
-      <div className={'container space-y-2'}>
+      <ProCard ghost gutter={[8, 8]}>
+        <ProCard layout={'center'} colSpan={12}>
+          content
+        </ProCard>
+        <ProCard layout={'center'} colSpan={12}>
+          content
+        </ProCard>
+      </ProCard>
+      <div className={' space-y-2 mt-4'}>
         <ProCard
           title={<div className={'ml-4 font-bold'}>search result</div>}
           loading={isSearching}
           headerBordered
           bordered
-          ghost
           layout={'center'}
           direction={'column'}
           extra={
@@ -48,7 +55,6 @@ export default () => {
           loading={isGreeting}
           headerBordered
           bordered
-          ghost
           layout={'center'}
           direction={'column'}
         >
