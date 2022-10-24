@@ -300,6 +300,12 @@
         icon: 'AppstoreFilled',
         component: './tutorial/query',
       },
+      {
+        name: 'daisy',
+        path: '/tutorial/daisy',
+        icon: 'AppstoreFilled',
+        component: './tutorial/daisy',
+      },
     ],
   },
   {

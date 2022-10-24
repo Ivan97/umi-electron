@@ -91,7 +91,7 @@ const AdvancedSearch: React.FC<AdvancedSearchProps> = (props) => {
 export default () => {
   return (
     <PageContainer>
-      <ProCard ghost layout={'center'} direction={'row'}>
+      <ProCard ghost layout={'center'} direction={'column'}>
         <div className={'container flex justify-center'}>
           <div className={'w-1/3 flex h-28 justify-center items-start'}>
             <div
@@ -102,13 +102,13 @@ export default () => {
               hello world
             </div>
           </div>
-          <div className={'w-2/3'}>
-            <AdvancedSearch
-              onSearch={(values) => {
-                console.log(values);
-              }}
-            />
-          </div>
+        </div>
+        <div className={'w-2/3'}>
+          <AdvancedSearch
+            onSearch={(values) => {
+              console.log(values);
+            }}
+          />
         </div>
       </ProCard>
     </PageContainer>

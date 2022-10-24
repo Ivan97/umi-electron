@@ -3,11 +3,9 @@ import ProCard from '@ant-design/pro-card';
 import { Button, message } from 'antd';
 import { DownOutlined, LeftOutlined } from '@ant-design/icons';
 import { useBoolean } from 'ahooks';
-import { useState } from 'react';
 
 export default () => {
   const [collapsed, { toggle }] = useBoolean(false);
-  const [data, setData] = useState<string>();
   return (
     <PageContainer>
       <ProCard
@@ -34,22 +32,6 @@ export default () => {
           <Button className={'w-24'} onClick={() => message.info('submitted')}>
             Submit
           </Button>
-        </div>
-        <div className={'mb-2'}>
-          <div className="p-10 card bg-base-200 space-y-4">
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Username</span>
-              </label>
-              <input
-                type="text"
-                placeholder="username"
-                className="input"
-                onChange={(e) => setData(e.target.value)}
-              />
-            </div>
-            <div>{data}</div>
-          </div>
         </div>
       </ProCard>
     </PageContainer>
