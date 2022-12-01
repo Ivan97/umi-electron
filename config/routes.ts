@@ -306,6 +306,12 @@
         icon: 'AppstoreFilled',
         component: './tutorial/daisy',
       },
+      {
+        name: 'geo',
+        path: '/tutorial/geo',
+        icon: 'smile',
+        component: './tutorial/geo',
+      },
     ],
   },
   {
